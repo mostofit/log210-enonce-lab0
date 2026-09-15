@@ -105,6 +105,19 @@ export class JeuRouter {
       this._errorCode500(error, req, res);
     }
   }
+    public redemarrerJeu(req: Request, res: Response, next: NextFunction) {
+
+    this._controleurJeu.redemarrerJeu();
+
+    req.flash('info', `L'application redémarre`);
+
+    res.status(200)
+      .send({
+        message: 'Success',
+        status: res.status,
+        joueurs: this._controleurJeu.joueurs
+      });
+  }
 
   /**
      * Take each handler, and attach to one of the Express.Router's
@@ -114,6 +127,7 @@ export class JeuRouter {
     this._router.post('/demarrerJeu', this.demarrerJeu.bind(this)); // pour .bind voir https://stackoverflow.com/a/15605064/1168342
     this._router.get('/jouer/:nom', this.jouer.bind(this)); // pour .bind voir https://stackoverflow.com/a/15605064/1168342
     this._router.get('/terminerJeu/:nom', this.terminerJeu.bind(this)); // pour .bind voir https://stackoverflow.com/a/15605064/1168342
+    this._router.get('/redemarrerJeu', this.redemarrerJeu.bind(this));
   }
 
 }

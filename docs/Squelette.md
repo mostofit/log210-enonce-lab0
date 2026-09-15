@@ -1,9 +1,9 @@
 # Identification de l'étudiant
 
-- <nomComplet1>Entrer votre nom</nomComplet1>
-- <courriel1>Entrer votre courriel</courriel1>
-- <codeMoodle1>Entrer votre code moodle obtenu à partir de Signets, 2 lettres majuscule avec 5 chiffres</codeMoodle1>
-- <githubAccount1>Entrer l'identifiant de votre compte github</githubAccount1>
+- <nomComplet1>Nicolas Robitaille</nomComplet1>
+- <courriel1>nicolas.robitaille.2@ens.etsmtl.ca</courriel1>
+- <codeMoodle1>AV09330</codeMoodle1>
+- <githubAccount1>mostofit</githubAccount1>
 
 # Squelette pour un API simple dans Node, Express et TypeScript
 
@@ -163,6 +163,11 @@ Voici la même figure, mais sous forme de diagramme de séquence avec l'acteur. 
 4. Le Joueur demande à terminer le jeu.
 1. ~~Le Système affiche un tableau de bord avec les noms des joueurs et le ratio des parties gagnées (nombre de fois gagné / nombre de lancers).~~
 
+#### Redémarrer
+
+1. Le Joueur demande à redémarrer l'application.
+2. Le Système termine tous les jeux en cours et redémarre l'application.
+
 ### Diagramme de cas d'utilisation
 
 ![Diagramme de cas d'utilisation](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/master/docs/modeles/dcu.puml)
@@ -209,5 +214,9 @@ Voici la même figure, mais sous forme de diagramme de séquence avec l'acteur. 
 - L'instance j de Joueur a été supprimée sur une base de correspondance avec nom
 
 ![Diagramme de séquence, terminerJeu](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/master/docs/modeles/rdcu-terminerJeu.puml)
+
+### Diagramme de classes logicielles
+
+![Diagramme de classes logicielles](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=URL_RAW_DE_APP_PUML)
 
 [README.md](../README.md)
