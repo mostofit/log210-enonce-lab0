@@ -217,6 +217,6 @@ Voici la même figure, mais sous forme de diagramme de séquence avec l'acteur. 
 
 ### Diagramme de classes logicielles
 
-![Diagramme de classes logicielles](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=URL_RAW_DE_APP_PUML)
+![Diagramme de classes logicielles](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/mostofit/log210-enonce-lab0/refs/heads/main/docs/modeles/App.puml)
 
 [README.md](../README.md)
